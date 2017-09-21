@@ -24,6 +24,26 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self _setUpMainView];
+    
+    self.navigationController.tabBarItem.landscapeImagePhone = [UIImage imageNamed:@"01"];
+    if (@available(iOS 11.0, *)) {
+        self.navigationController.tabBarItem.largeContentSizeImage = [UIImage imageNamed:@"01"];
+    } else {
+        // Fallback on earlier versions
+    }
+    
+    // 大标题
+    self.navigationItem.title = @"iOS 11 适配";
+    if (@available(iOS 11.0, *)) {
+        self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAutomatic;
+    } else {
+        // Fallback on earlier versions
+    }
+    if (@available(iOS 11.0, *)) {
+        self.navigationController.navigationBar.prefersLargeTitles = YES;
+    } else {
+        // Fallback on earlier versions
+    }
 }
 
 - (void)_setUpMainView{
@@ -37,6 +57,7 @@
             id  class = (UIViewController *)self.gotoVCClasses[indexPath.row];
             if (class) {
                 UIViewController * vc = [[class alloc] init];
+                vc.hidesBottomBarWhenPushed = YES;
                 [self.navigationController pushViewController:vc animated:YES];
             }
         }
@@ -48,7 +69,7 @@
 #pragma mark - Lazy
 - (NSArray *)dataSource{
     if (!_dataSource) {
-        _dataSource = @[@"TableView 适配", @"运动传感器"];
+        _dataSource = @[@"TableView 适配"];
     }
     return _dataSource;
 }

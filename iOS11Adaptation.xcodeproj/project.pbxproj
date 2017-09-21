@@ -13,6 +13,7 @@
 		63AC17871F7231D2005DCA8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63AC17851F7231D2005DCA8E /* LaunchScreen.storyboard */; };
 		63AC178A1F7231D2005DCA8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AC17891F7231D2005DCA8E /* main.m */; };
 		63C3D98A1F739F21004D87F1 /* OCCommonMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C3D9891F739F21004D87F1 /* OCCommonMacro.framework */; };
+		63C3D98F1F73B939004D87F1 /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C3D98E1F73B939004D87F1 /* 01.png */; };
 		63DB866C1F735ABB00889D6A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB866B1F735ABB00889D6A /* MainViewController.m */; };
 		63DB866F1F735BBA00889D6A /* SubTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB866E1F735BBA00889D6A /* SubTableViewController.m */; };
 		63DB86721F735D0300889D6A /* ElegantTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DB86711F735D0300889D6A /* ElegantTableView.framework */; };
@@ -29,6 +30,7 @@
 		63AC17891F7231D2005DCA8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		63C3D9891F739F21004D87F1 /* OCCommonMacro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCCommonMacro.framework; path = Carthage/Build/iOS/OCCommonMacro.framework; sourceTree = "<group>"; };
 		63C3D98B1F739F3B004D87F1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		63C3D98E1F73B939004D87F1 /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
 		63DB866A1F735ABB00889D6A /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		63DB866B1F735ABB00889D6A /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		63DB866D1F735BBA00889D6A /* SubTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubTableViewController.h; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		63AC17791F7231D2005DCA8E /* iOS11Adaptation */ = {
 			isa = PBXGroup;
 			children = (
+				63C3D98C1F73B939004D87F1 /* Resources */,
 				63AC177A1F7231D2005DCA8E /* AppDelegate.h */,
 				63AC177B1F7231D2005DCA8E /* AppDelegate.m */,
 				63DB866A1F735ABB00889D6A /* MainViewController.h */,
@@ -83,6 +86,22 @@
 				63C3D98B1F739F3B004D87F1 /* PrefixHeader.pch */,
 			);
 			path = iOS11Adaptation;
+			sourceTree = "<group>";
+		};
+		63C3D98C1F73B939004D87F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63C3D98D1F73B939004D87F1 /* images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		63C3D98D1F73B939004D87F1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				63C3D98E1F73B939004D87F1 /* 01.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		63DB86701F735D0300889D6A /* Frameworks */ = {
@@ -155,6 +174,7 @@
 			files = (
 				63AC17871F7231D2005DCA8E /* LaunchScreen.storyboard in Resources */,
 				63AC17841F7231D2005DCA8E /* Assets.xcassets in Resources */,
+				63C3D98F1F73B939004D87F1 /* 01.png in Resources */,
 				63AC17821F7231D2005DCA8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,6 +25,11 @@
 }
 
 - (void)_setUpSubTableViewNavgationView{
+    if (@available(iOS 11.0, *)) {
+        self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeNever;
+    } else {
+        // Fallback on earlier versions
+    }
     self.navigationItem.title = @"TableView适配";
 }
 

@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  iOS11Adaptation
+//
+//  Created by YJHou on 2017/9/21.
+//  Copyright © 2017年 https://github.com/stackhou. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <OCCommonMacro/OCCommonMacro.h>
+
+#endif /* PrefixHeader_pch */

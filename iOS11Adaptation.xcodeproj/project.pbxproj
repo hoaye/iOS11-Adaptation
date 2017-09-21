@@ -12,6 +12,7 @@
 		63AC17841F7231D2005DCA8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63AC17831F7231D2005DCA8E /* Assets.xcassets */; };
 		63AC17871F7231D2005DCA8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63AC17851F7231D2005DCA8E /* LaunchScreen.storyboard */; };
 		63AC178A1F7231D2005DCA8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AC17891F7231D2005DCA8E /* main.m */; };
+		63C3D98A1F739F21004D87F1 /* OCCommonMacro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C3D9891F739F21004D87F1 /* OCCommonMacro.framework */; };
 		63DB866C1F735ABB00889D6A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB866B1F735ABB00889D6A /* MainViewController.m */; };
 		63DB866F1F735BBA00889D6A /* SubTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB866E1F735BBA00889D6A /* SubTableViewController.m */; };
 		63DB86721F735D0300889D6A /* ElegantTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DB86711F735D0300889D6A /* ElegantTableView.framework */; };
@@ -26,6 +27,8 @@
 		63AC17861F7231D2005DCA8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63AC17881F7231D2005DCA8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63AC17891F7231D2005DCA8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63C3D9891F739F21004D87F1 /* OCCommonMacro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCCommonMacro.framework; path = Carthage/Build/iOS/OCCommonMacro.framework; sourceTree = "<group>"; };
+		63C3D98B1F739F3B004D87F1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		63DB866A1F735ABB00889D6A /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		63DB866B1F735ABB00889D6A /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		63DB866D1F735BBA00889D6A /* SubTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubTableViewController.h; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C3D98A1F739F21004D87F1 /* OCCommonMacro.framework in Frameworks */,
 				63DB86721F735D0300889D6A /* ElegantTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +80,7 @@
 				63AC17851F7231D2005DCA8E /* LaunchScreen.storyboard */,
 				63AC17881F7231D2005DCA8E /* Info.plist */,
 				63AC17891F7231D2005DCA8E /* main.m */,
+				63C3D98B1F739F3B004D87F1 /* PrefixHeader.pch */,
 			);
 			path = iOS11Adaptation;
 			sourceTree = "<group>";
@@ -83,6 +88,7 @@
 		63DB86701F735D0300889D6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63C3D9891F739F21004D87F1 /* OCCommonMacro.framework */,
 				63DB86711F735D0300889D6A /* ElegantTableView.framework */,
 			);
 			name = Frameworks;
@@ -163,6 +169,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/ElegantTableView.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OCCommonMacro.framework",
 			);
 			outputPaths = (
 			);
@@ -320,6 +327,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iOS11Adaptation/PrefixHeader.pch;
 				INFOPLIST_FILE = iOS11Adaptation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -339,6 +348,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iOS11Adaptation/PrefixHeader.pch;
 				INFOPLIST_FILE = iOS11Adaptation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

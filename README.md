@@ -251,3 +251,7 @@ titleView支持autolayout，这要求titleView必须是能够自撑开的或实�
     }
 }
 ```
+
+# 其他适配注意事项
+
+部分项目的轮播图在iOS 11+Xcode编译的情况下，会出现是上下左右任意滚动的bug，推荐使用 YJBannerView轮播图，完全适配iOS 11。Github地址：[YJBannerView](https://github.com/stackhou/YJBannerViewOC)

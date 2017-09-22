@@ -200,13 +200,13 @@ iOS11之前导航栏默认高度为64pt(statusBar + NavigationBar)，iOS11之后
 
 iOS11之前导航栏的title是添加在`UINavigationItemView上面，而navigationBarButton则直接添加在UINavigationBar上面，如果设置了titleView，则titleView也是直接添加在UINavigationBar上面。
 
-<img src="https://ws1.sinaimg.cn/large/006tNc79ly1fjs72xxjecj30bn069dgq.jpg">
-<img src="https://ws1.sinaimg.cn/large/006tNc79ly1fjs718e860j30be0a3abe.jpg">
+![](https://ws1.sinaimg.cn/large/006tNc79ly1fjs72xxjecj30bn069dgq.jpg)
+![](https://ws1.sinaimg.cn/large/006tNc79ly1fjs718e860j30be0a3abe.jpg)
 
 iOS11之后，大概因为largeTitle的原因，视图层级发生了变化，如果没有给titleView赋值，则titleView会直接添加在_UINavigationBarContentView上面，如果赋值了titleView，则会把titleView添加在_UITAMICAdaptorView上，而navigationBarButton被加在了_UIButtonBarStackView上，然后他们都被加在了_UINavigationBarContentView上
 
-<img src="https://ws1.sinaimg.cn/large/006tNc79ly1fjs78ugjhaj30bn05qq3p.jpg">
-<img src="https://ws2.sinaimg.cn/large/006tNc79ly1fjs7g6bqotj30bb0b075t.jpg">
+![](https://ws1.sinaimg.cn/large/006tNc79ly1fjs78ugjhaj30bn05qq3p.jpg)
+![](https://ws2.sinaimg.cn/large/006tNc79ly1fjs7g6bqotj30bb0b075t.jpg)
 
 如果你的项目是自定义的navigationBar，那么在iOS11上运行就可能出现布局错乱的bug，解决办法是重写UINavigationBar的layoutSubviews方法，调整布局：
 

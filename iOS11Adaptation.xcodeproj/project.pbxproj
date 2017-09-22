@@ -17,6 +17,8 @@
 		63DB866C1F735ABB00889D6A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB866B1F735ABB00889D6A /* MainViewController.m */; };
 		63DB866F1F735BBA00889D6A /* SubTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB866E1F735BBA00889D6A /* SubTableViewController.m */; };
 		63DB86721F735D0300889D6A /* ElegantTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DB86711F735D0300889D6A /* ElegantTableView.framework */; };
+		63EAD5F01F74D3F300DBA57E /* YJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EAD5EF1F74D3F300DBA57E /* YJNavigationController.m */; };
+		63EAD5F31F74D43700DBA57E /* YJNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EAD5F21F74D43700DBA57E /* YJNavigationBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,10 @@
 		63DB866D1F735BBA00889D6A /* SubTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubTableViewController.h; sourceTree = "<group>"; };
 		63DB866E1F735BBA00889D6A /* SubTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubTableViewController.m; sourceTree = "<group>"; };
 		63DB86711F735D0300889D6A /* ElegantTableView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ElegantTableView.framework; path = Carthage/Build/iOS/ElegantTableView.framework; sourceTree = "<group>"; };
+		63EAD5EE1F74D3F300DBA57E /* YJNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJNavigationController.h; sourceTree = "<group>"; };
+		63EAD5EF1F74D3F300DBA57E /* YJNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJNavigationController.m; sourceTree = "<group>"; };
+		63EAD5F11F74D43700DBA57E /* YJNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJNavigationBar.h; sourceTree = "<group>"; };
+		63EAD5F21F74D43700DBA57E /* YJNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJNavigationBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,10 @@
 				63DB866B1F735ABB00889D6A /* MainViewController.m */,
 				63DB866D1F735BBA00889D6A /* SubTableViewController.h */,
 				63DB866E1F735BBA00889D6A /* SubTableViewController.m */,
+				63EAD5EE1F74D3F300DBA57E /* YJNavigationController.h */,
+				63EAD5EF1F74D3F300DBA57E /* YJNavigationController.m */,
+				63EAD5F11F74D43700DBA57E /* YJNavigationBar.h */,
+				63EAD5F21F74D43700DBA57E /* YJNavigationBar.m */,
 				63AC17801F7231D2005DCA8E /* Main.storyboard */,
 				63AC17831F7231D2005DCA8E /* Assets.xcassets */,
 				63AC17851F7231D2005DCA8E /* LaunchScreen.storyboard */,
@@ -206,7 +216,9 @@
 			files = (
 				63DB866F1F735BBA00889D6A /* SubTableViewController.m in Sources */,
 				63AC178A1F7231D2005DCA8E /* main.m in Sources */,
+				63EAD5F31F74D43700DBA57E /* YJNavigationBar.m in Sources */,
 				63AC177C1F7231D2005DCA8E /* AppDelegate.m in Sources */,
+				63EAD5F01F74D3F300DBA57E /* YJNavigationController.m in Sources */,
 				63DB866C1F735ABB00889D6A /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

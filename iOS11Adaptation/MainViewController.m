@@ -25,7 +25,14 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self _setUpMainView];
     
-    self.navigationController.tabBarItem.landscapeImagePhone = [UIImage imageNamed:@"01"];
+//    UITabBarItem *selectedTabBarItem = ((UITabBar *)((UITabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController).view.subviews[1]).selectedItem;
+//
+//    selectedTabBarItem.landscapeImagePhone = [UIImage imageNamed:@"01"];
+    
+//    NSLog(@"-->%@-- %@", self.tabBarItem, self.navigationController.tabBarItem);
+    
+//    self.navigationController.tabBarItem.landscapeImagePhone = [UIImage imageNamed:@"01"];
+    
     if (@available(iOS 11.0, *)) {
         self.navigationController.tabBarItem.largeContentSizeImage = [UIImage imageNamed:@"01"];
     } else {
@@ -33,17 +40,37 @@
     }
     
     // 大标题
-    self.navigationItem.title = @"iOS 11 适配";
+    self.navigationItem.title = @"iOS11 适配";
     if (@available(iOS 11.0, *)) {
         self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAutomatic;
     } else {
         // Fallback on earlier versions
     }
     if (@available(iOS 11.0, *)) {
-        self.navigationController.navigationBar.prefersLargeTitles = YES;
+//        self.navigationController.navigationBar.prefersLargeTitles = YES;
     } else {
         // Fallback on earlier versions
     }
+    
+    [self _setUpNavView];
+}
+
+- (void)_setUpNavView{
+    
+    UIBarButtonItem *buttonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(barButtonItemClick:)];
+    self.navigationItem.leftBarButtonItem = buttonItem;
+    
+    UILabel *titleView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 40)];
+    titleView.text = @"我是TitleView";
+    self.navigationItem.titleView = titleView;
+}
+
+- (void)barButtonItemClick:(UIBarButtonItem *)item{
+    NSLog(@"-->%@", @"---------");
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
 }
 
 - (void)_setUpMainView{
@@ -84,5 +111,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
 
 @end

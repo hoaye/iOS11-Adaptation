@@ -1,6 +1,6 @@
 
 
-iOS 11适配源码 [Demo地址](https://github.com/stackhou/iOS11-Adaptation)
+iOS 11适配源码 [简书地址](http://www.jianshu.com/p/de19e9cda481)
 
 # 安全区域的适配
 

@@ -75,7 +75,7 @@
 
 - (void)_setUpMainView{
     
-    [[ElegantTableViewGenerator shareInstance] createTableViewWithTitles:self.dataSource subTitles:nil rowHeight:50 superView:self.view didSelectRowBlock:^(UITableView *tableView, NSIndexPath *indexPath) {
+    UITableView *tableView =  [[ElegantTableViewGenerator shareInstance] createTableViewWithTitles:self.dataSource subTitles:nil rowHeight:50 superView:self.view didSelectRowBlock:^(UITableView *tableView, NSIndexPath *indexPath) {
         
         [tableView deselectRowAtIndexPath:indexPath animated:YES];
         
@@ -91,6 +91,12 @@
     } didScrollBlock:^(UIScrollView *tableView, CGPoint contentOffset) {
         
     }];
+    
+    if (@available(iOS 11.0, *)) {
+//        tableView.contentInsetAdjustmentBehavior = UIApplicationBackgroundFetchIntervalNever;
+    } else {
+        // Fallback on earlier versions
+    }
 }
 
 #pragma mark - Lazy
